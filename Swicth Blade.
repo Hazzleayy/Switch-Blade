@@ -1,0 +1,74 @@
+-- 𝒪𝒫𝐸𝒩 𝒮𝒪𝒰𝑅𝒞𝐸𝒟 𝒞𝒪𝒟𝐸 𝐵𝒴 𝐻𝒜𝒵𝒵𝐿𝐸
+
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+getgenv().SecureMode = true
+
+local Window = Rayfield:CreateWindow({
+    Name = "",
+    LoadingTitle = "Welcome to SwitchBlade, user",
+    LoadingSubtitle = "by Hazzle",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, 
+       FileName = "Switch Blade"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "gvVnGnwRqc", 
+       RememberJoins = true 
+    },
+    KeySystem = true, 
+    KeySettings = {
+       Title = "",
+       Subtitle = "Key System",
+       Note = "Join the discord (discord.gg/gvVnGnwRqc)",
+       FileName = "Key System",
+       SaveKey = true,
+       GrabKeyFromSite = false, 
+       Key = "999666FuckYou"
+    }
+ })
+
+ Rayfield:Notify({
+    Title = "Succesfully logged",
+    Content = "You Succesfully logged into Switch Blade",
+    Duration = 2.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Switch Logs",
+          Callback = function()
+          print("The user logged into Switch Blade!")
+       end
+    },
+ },
+ })
+
+
+ local Tab = Window:CreateTab("Main", 4483362458) 
+ local Section = Tab:CreateSection("Cmds")
+ 
+local Button = Tab:CreateButton({
+   Name = "Inf Yield",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "Reviz admin",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet('https://pastebin.com/raw/pyzjWNhk'))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "CMD-X",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    end,
+ })
